@@ -108,25 +108,35 @@ nav ul li a:hover::after{
     color: #F47068;
 }
 
-/* BUTTON */
 .btn{
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
 
     margin-top: 35px;
-    padding: 14px 35px;
+    padding: 15px 32px;
 
     background: #F47068;
     color: #fff;
 
-    border-radius: 12px;
     text-decoration: none;
+    border-radius: 12px;
 
-    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.4s ease;
 }
 
+/* HOVER */
 .btn:hover{
+    background: #fff;
+    color: #F47068;
+
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(244,112,104,0.3);
+
+    box-shadow:
+        0 10px 25px rgba(244,112,104,0.3);
 }
 
 /* RIGHT SIDE */
