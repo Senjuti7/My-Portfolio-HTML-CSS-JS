@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/76a0d3afbe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+
+    <div class="container">
+
+        <nav>
+
+            <img src="images/logo.png"
+                 alt="Logo"
+                 class="logo">
+
+            <ul id="sidemenu">
+                <i class="fas fa-times"
+                    onclick="closemenu()"></i>
+
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-bars"
+                id="menu-icon"
+                onclick="openmenu()"></i>
+
+        </nav>
+
+        <!-- HERO -->
+        <div class="hero-section">
+
+            <!-- LEFT -->
+            <div class="header-text">
+
+                <p>Data Analyst & Software Engineer</p>
+
+                <h1>
+                    Hi, I'm <span>Senjuti</span> Maitra
+                </h1>
+
+                <a href="#portfolio" class="btn">
+                    View My Work
+                </a>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="hero-image">
+
+                <div class="image-frame">
+
+                    <img src="images/header.png"
+                         alt="Profile Image">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- ---------------about---------------- -->
+
+<div id="about">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- LEFT -->
+            <div class="about-col-1">
+
+                <h1 class="subtitle">About Me</h1>
+
+                <p class="about-text">
+                    Final-year CSE student passionate about Data Analytics,
+                    with hands-on experience in SQL, Python, Pandas,
+                    NumPy, Power BI, and PostgreSQL for data cleaning,
+                    analysis, and visualization.
+
+                    Also skilled in Software Development and Frontend Development,
+                    with knowledge of JavaScript, HTML, CSS, Bootstrap,
+                    and Tailwind CSS for building responsive and user-friendly
+                    web applications.
+
+                    Strong problem-solving skills with a good understanding
+                    of Data Structures & Algorithms using C++, and always
+                    eager to learn and work on real-world projects.
+                </p>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="about-col-2">
+
+                <!-- TABS -->
+                <div class="tab-titles">
+
+                    <p class="tab-links active-link"
+                       onclick="opentab('skills', event)">
+                        Skills
+                    </p>
+
+                    <p class="tab-links"
+                       onclick="opentab('experience', event)">
+                        Experience
+                    </p>
+
+                    <p class="tab-links"
+                       onclick="opentab('education', event)">
+                        Education
+                    </p>
+
+                </div>
+
+                <!-- CARD -->
+                <div class="about-card">
+
+                    <!-- SKILLS -->
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li>
+                                <span>Languages</span><br>
+                                C++, Python, JavaScript, SQL
+                            </li>
+
+                            <li>
+                                <span>Frontend</span><br>
+                                HTML, CSS, Bootstrap, Tailwind CSS
+                            </li>
+
+                            <li>
+                                <span>Data Analytics</span><br>
+                                Pandas, NumPy, Power BI
+                            </li>
+
+                            <li>
+                                <span>Tools</span><br>
+                                Git, GitHub, VS Code, Jupyter Notebook
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- EXPERIENCE -->
+                    <div class="tab-contents" id="experience">
+
+                        <ul>
+                            <li>
+                                <span>Web Developer Intern</span><br>
+                                Groveus Informatics Pvt. Ltd.
+                            </li>
+
+                            <li>
+                                <span>Data Analytics</span><br>
+                                Data analysis and visualization using Python and Power BI.
+                            </li>
+
+                            <li>
+                                <span>Practice</span><br>
+                                SQL Queries & DSA Problem Solving
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- EDUCATION -->
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li>
+                                <span>B.Tech in CSE</span><br>
+                                Siliguri Institute of Technology
+                            </li>
+
+                            <li>
+                                <span>Higher Secondary</span><br>
+                                86%
+                            </li>
+
+                            <li>
+                                <span>Secondary</span><br>
+                                83%
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+ <!-- ---------------services---------------- -->
+  <div id="services">
+    <div class="container">
+        <h2 class="subtitle">My Services</h2>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Data Analysis</h3>
+                <p>Clean, analyze, and visualize data using Python, SQL, and Power BI.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Create user-friendly UI using HTML, CSS, JavaScript, Bootstrap, Tailwind.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h3>SQL Database Handling</h3>
+                <p>Write queries, manage databases, and analyze datasets.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- --------------portfolio--------------- -->
+<div id="portfolio">
+
+    <div class="container">
+
+        <h1 class="subtitle">My Work</h1>
+
+        <div class="work-list">
+
+            <!-- PROJECT 1 -->
+            <div class="work">
+
+                <img src="images/work1.jpg" alt="Project 1">
+
+                <div class="layer">
+
+                    <h3>Customer Shopping Behavior Analysis</h3>
+
+                    <p>
+                        Analyzed customer shopping behavior using
+                        Python, SQL, PostgreSQL, and Power BI
+                        to uncover business insights and trends.
+                    </p>
+
+                    <span>
+                        Python • SQL • PostgreSQL • Power BI
+                    </span>
+
+                    <a href="https://github.com/Senjuti7/Customer-Shopping-Behavior-Analysis-Python-Sql-PowerBi.git"
+                       target="_blank">
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="work">
+
+                <img src="images/work2.jpg" alt="Project 2">
+
+                <div class="layer">
+
+                    <h3>Hotel Booking Cancellation Analysis</h3>
+
+                    <p>
+                        Explored hotel booking cancellation patterns
+                        using data analysis and visualization techniques.
+                    </p>
+
+                    <span>
+                        Python • Pandas • NumPy • Matplotlib
+                    </span>
+
+                    <a href="https://github.com/Senjuti7/Hotel-business-data-analysis.git"
+                       target="_blank">
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="work">
+
+                <img src="images/work3.jpg" alt="Project 3">
+
+                <div class="layer">
+
+                    <h3>HirePackers Project</h3>
+
+                    <p>
+                        Developed a logistics website for
+                        package delivery management and tracking.
+                    </p>
+
+                    <span>
+                        PHP • CodeIgniter • Bootstrap
+                    </span>
+
+                    <a href="https://github.com/Senjuti7/hirepackers.git"
+                       target="_blank">
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- --------------contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="subtitle">Contact Me</h2>
+                <p><i class="fa-solid fa-paper-plane"></i>
+                    maitrasenjuti9@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>
+                    7029808143</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/senjuti-maitra-205612254" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Senjuti7" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea rows="5" name="Message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+        <p>Copyright © 2026 Senjuti Maitra. All Rights Reserved.</p>
+    </div>
+<script>
+
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname, event){
+
+        for(let tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    var menuicon = document.getElementById("menu-icon");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+        menuicon.style.display = "none";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-220px";
+        menuicon.style.display = "block";
+    }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkpeIMmUoKfDsgdYoV2FxoveP7QBjiMnaPi6MF8pF6WOmW1K07Ppccy5t2b4bjAhNCpg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
